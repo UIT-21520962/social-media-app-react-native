@@ -16,7 +16,7 @@ const CustomNavigationTab = ({ navigation }) => {
         }}
         style={styles.navItem}
       >
-        <View style={{borderRadius: 50,height: 40,width: 70,display: "flex",justifyContent: "center",alignItems: "center",backgroundColor: renderPage === "Home" ? "#33bc54" : "#fff"
+        <View style={{borderRadius: 50,height: 40,width: 70,display: "flex",justifyContent: "center",alignItems: "center",backgroundColor: renderPage === "Home" ? "#3366CC" : "#fff"
         }}>
           <FontAwesome
             name="home"
@@ -31,7 +31,7 @@ const CustomNavigationTab = ({ navigation }) => {
         }}
         style={styles.navItem}
       >
-        <View style={{borderRadius: 50,height: 40,width: 70,display: "flex",justifyContent: "center",alignItems: "center",backgroundColor: renderPage === "Post" ? "#33bc54" : "#fff"
+        <View style={{borderRadius: 50,height: 40,width: 70,display: "flex",justifyContent: "center",alignItems: "center",backgroundColor: renderPage === "Post" ? "#3366CC" : "#fff"
         }}>
           <FontAwesome
             name="plus-square"
@@ -46,7 +46,7 @@ const CustomNavigationTab = ({ navigation }) => {
         }}
         style={styles.navItem}
       >
-        <View style={{borderRadius: 50,height: 40,width: 70,display: "flex",justifyContent: "center",alignItems: "center",backgroundColor: renderPage === "Profile" ? "#33bc54" : "#fff"
+        <View style={{borderRadius: 50,height: 40,width: 70,display: "flex",justifyContent: "center",alignItems: "center",backgroundColor: renderPage === "Profile" ? "#3366CC" : "#fff"
         }}>
           <FontAwesome
             name="user"
@@ -61,7 +61,7 @@ const CustomNavigationTab = ({ navigation }) => {
         }}
         style={styles.navItem}
       >
-        <View style={{borderRadius: 50,height: 40,width: 70,display: "flex",justifyContent: "center",alignItems: "center",backgroundColor: renderPage === "EditProfile" ? "#33bc54" : "#fff"
+        <View style={{borderRadius: 50,height: 40,width: 70,display: "flex",justifyContent: "center",alignItems: "center",backgroundColor: renderPage === "EditProfile" ? "#3366CC" : "#fff"
         }}>
           <FontAwesome
             name="pencil"

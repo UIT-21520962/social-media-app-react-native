@@ -88,7 +88,7 @@ const PostEditor = () => {
             justifyContent: "center",
             alignItems: "center",
             height: 250,
-            borderColor: "#b9e6c1",
+            borderColor: "#black",
             borderWidth: 2,
             width: "100%",
             marginBottom: 20,
@@ -101,7 +101,7 @@ const PostEditor = () => {
               style={{ height: "100%", width: "100%", borderRadius: 16 }}
             />
           ) : (
-            <Text style={{ color: "#d3d3d3", fontSize: 25 }}>
+            <Text style={{ color: "#black", fontSize: 25 }}>
               Upload a post image
             </Text>
           )}
@@ -134,7 +134,7 @@ const PostEditor = () => {
             >
               <Image
                 source={require("../assets/icons/pen.png")}
-                style={{ height: 35, width: 35 }}
+                style={{ height: 35, width: 35, color: "#black" }}
               />
             </View>
           </TouchableWithoutFeedback>
@@ -257,13 +257,13 @@ const styles = StyleSheet.create({
     borderLeftWidth: 2,
     borderRightWidth: 2,
     borderBottomWidth: 2,
-    borderColor: "#b9e6c1", // Gray border for the editor
+    borderColor: "#black", // Gray border for the editor
     fontSize: 20,
     height: 240, // Set the same size for the editor
   },
 
   richTextToolbarStyle: {
-    backgroundColor: "#b9e6c1", // Light Green background for the toolbar
+    backgroundColor: "#3366CC", // Light Green background for the toolbar
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
   },
@@ -276,7 +276,7 @@ const styles = StyleSheet.create({
   saveButtonStyle: {
     height: 55,
     color: "#fff",
-    backgroundColor: "#47c265",
+    backgroundColor: "#3366CC",
     borderRadius: 10,
     padding: 10,
     width: "25%",

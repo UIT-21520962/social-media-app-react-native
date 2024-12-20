@@ -22,19 +22,21 @@ const LoginPage = ({ navigation }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const loginFieldsArray = [
-    {
-      title: "Email",
-      value: email,
-      setValue: setEmail,
-      iconName: "envelope",
-    },
-    {
-      title: "Password",
-      value: password,
-      setValue: setPassword,
-      iconName: "lock",
-    },
-  ];
+  {
+    title: "Email",
+    value: email,
+    setValue: setEmail,
+    iconName: "envelope",
+    secureTextEntry: false, // Email không cần ẩn
+  },
+  {
+    title: "Password",
+    value: password,
+    setValue: setPassword,
+    iconName: "lock",
+    secureTextEntry: true, // Password cần ẩn
+  },
+];
 
   useEffect(() => {
     NavigationBar.setBackgroundColorAsync("#FFFFFF");
@@ -152,7 +154,7 @@ const LoginPage = ({ navigation }) => {
           style={{ textAlign: "center", fontSize: 17 }}
         >
           Don't have an account?{" "}
-          <Text style={{ fontWeight: "700", color: "#33BC54" }}>Sign Up</Text>
+          <Text style={{ fontWeight: "700", color: "#3366CC" }}>Sign Up</Text>
         </Text>
       </View>
     </View>

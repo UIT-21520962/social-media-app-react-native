@@ -123,7 +123,7 @@ const AppHomePage = ({ navigation }) => {
   };
 
   useEffect(() => {
-    NavigationBar.setBackgroundColorAsync("#FFFFFF");
+    NavigationBar.setBackgroundColorAsync("#3366CC");
     restoreSession();
     getData(userId);
     getData2();
@@ -144,11 +144,14 @@ const AppHomePage = ({ navigation }) => {
           alignItems: "center",
         }}
       >
-        <Text style={{ fontSize: 30, fontWeight: "bold" }}>LinkUp</Text>
-        <View style={{ display: "flex", flexDirection: "row", gap: 15 }}>
+        <Text style={{ fontSize: 30, fontWeight: "bold" }}>MewZing</Text>
+        <View style={{ display: "flex", flexDirection: "row", gap: 20 }}>
           <Icon name="bookmark-o" size={30} color="#000" />
-          <Icon name="sign-out" size={30} color="#000" />
-          {/* <Icon name="paper-plane-o" size={28} color="#000" /> */}
+          <Icon name="paper-plane-o" size={28} color="#000" />
+          <Icon onPress={() => {
+            navigation.navigate("Login");
+          }} name="sign-out" size={30} color="#000" />
+          
         </View>
       </View>
       {dataReceived?.length > 0 ? (
@@ -171,7 +174,7 @@ const AppHomePage = ({ navigation }) => {
           })}
         </ScrollView>
       ) : (
-        <ActivityIndicator color={"#33bc54"} size={50} />
+        <ActivityIndicator color={"#3366CC"} size={50} />
       )}
 
       <CustomNavigationTab />

@@ -24,27 +24,31 @@ const SignUpPage = ({ navigation }) => {
       title: "Username",
       value: username,
       setValue: setUsername,
-      iconName: "user"
+      iconName: "user",
+      secureTextEntry: false // Không cần ẩn cho Username
     },
     {
       title: "Email",
       value: email,
       setValue: setEmail,
-      iconName: "envelope"
+      iconName: "envelope",
+      secureTextEntry: false // Không cần ẩn cho Email
     },
     {
       title: "Password",
       value: password,
       setValue: setPassword,
-      iconName: "lock"
+      iconName: "lock",
+      secureTextEntry: true // Cần ẩn cho Password
     },
     {
       title: "Phone Number",
       value: phoneNumber,
       setValue: setPhoneNumber,
-      iconName: "phone"
+      iconName: "phone",
+      secureTextEntry: false // Không cần ẩn cho Phone Number
     },
-  ]
+  ];
 
   const setFunc = () => {
     setEmail(email.trim());
@@ -145,7 +149,7 @@ const SignUpPage = ({ navigation }) => {
           style={{ textAlign: "center", fontSize: 17 }}
         >
           Already have an account?{" "}
-          <Text style={{ fontWeight: "700", color: "#33BC54" }}>Login</Text>
+          <Text style={{ fontWeight: "700", color: "#3366CC" }}>Login</Text>
         </Text>
       </View>
       <Toast text1Style={{ fontSize: 17 }} />

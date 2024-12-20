@@ -41,12 +41,12 @@ const CommentDisplay = ({ element }) => {
         )}
       </View>
       <View style={{ display: "flex", width: "82%" }}>
-        <Text style={{ fontSize: 19, fontWeight: "bold" }}>
+        <Text style={{ fontSize: 19, fontWeight: "bold"}}>
           {element.userDisplayName === "NULL"
             ? "Anonymous"
             : element.userDisplayName}
         </Text>
-        <Text style={{ fontSize: 17, width: "100%" }}>
+        <Text style={{ fontSize: 17, width: "60%", backgroundColor: "DDDDDD", borderRadius: 15}}>
           {element?.content}
         </Text>
       </View>

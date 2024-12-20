@@ -109,14 +109,16 @@ const CommentsSection = forwardRef((props, ref) => {
           }}
         >
           <TextInput
-            placeholder="write a comment..."
+            placeholder="Write a comment..."
             style={{
               height: 60,
               width: "80%",
               borderWidth: 1,
               borderColor: "#d3d3d3",
               paddingHorizontal: 15,
+              borderRadius: 15,
               fontSize: 18, // Adds shadow on Android
+              paddingRight: 10,
             }}
             value={commentText}
             onChangeText={(text) => setCommentText(text)}
@@ -135,10 +137,13 @@ const CommentsSection = forwardRef((props, ref) => {
               style={{
                 width: "20%",
                 height: 60,
-                backgroundColor: "#33bc54",
+                backgroundColor: "#3366CC",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
+                borderRadius: 15,
+                marginLeft: 12,
+                marginRight: 12,
               }}
             >
               <Icon name="paper-plane" size={30} color={"#fff"} />

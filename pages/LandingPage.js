@@ -28,7 +28,7 @@ const LandingPage = ({ navigation }) => {
               color: "#000",
             }}
           >
-            Link Up!
+            Mew Zing!
           </Text>
           <Text style={{ textAlign: "center", fontSize: 17 }}>
             Where every thought finds a home and every image tells a story.
@@ -58,11 +58,7 @@ const LandingPage = ({ navigation }) => {
             style={{ textAlign: "center", fontSize: 17 }}
           >
             Already have an account?{" "}
-            <Text style={{ fontWeight: "700", color: "#33BC54" }}>Login </Text>
-            <Text onPress={()=>{navigation.navigate("Profile")}}>Profile Page </Text>
-            <Text onPress={()=>{navigation.navigate("Edit Profile")}}>Edit Profile Page</Text>
-            <Text onPress={()=>{navigation.navigate("Create Post")}}>Create Post</Text>
-            <Text onPress={()=>{navigation.navigate("NewPage")}}>App Home Page</Text>
+            <Text style={{ fontWeight: "700", color: "#3366CC" }}>Login </Text>
           </Text>
         </View>
       </View>
@@ -80,13 +76,15 @@ export const landingPageStyles = StyleSheet.create({
   welcomeImage: {
     height: 288,
     width: 265,
+    backgroundColor: "#3366CC",
+    borderRadius: 15,    
   },
   button: {
     height: 60,
     width: "100%",
     marginTop: 15,
     borderRadius: 15,
-    backgroundColor: "#33BC54",
+    backgroundColor: "#3366CC",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",

@@ -152,7 +152,7 @@ const Post = ({ element, postIds, setCommentPostId, id }) => {
             Save Post
             </MenuItem>
             <MenuDivider />
-            <MenuItem onPress={hideMenu} textStyle={{fontSize: 15,color: "red"}}>Delete Post</MenuItem>
+            <MenuItem onPress={hideMenu} textStyle={{fontSize: 15,color: "red"}}>Report Post</MenuItem>
           </Menu>
         </View>
       </View>
@@ -217,7 +217,7 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     marginHorizontal: 15,
     padding: 10,
-    borderRadius: 10,
+    borderRadius: 20,
     borderWidth: 1,
     borderColor: "#d7d8d8",
   },
@@ -225,6 +225,8 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginVertical: 10,
     resizeMode: "contain",
+    width: 150, 
+    height: 150,
   },
   actionsContainer: {
     marginTop: 10,
